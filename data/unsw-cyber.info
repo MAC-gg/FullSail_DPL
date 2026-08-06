@@ -1,0 +1,65 @@
+UNSW-NB15 Dataset
+
+Source:
+Australian Centre for Cyber Security (ACCS), University of New South Wales
+
+Description:
+UNSW-NB15 is a network intrusion detection dataset containing both normal network traffic and simulated cyberattacks. Each row represents a network connection and includes features describing protocol information, packet statistics, connection duration, and traffic behavior.
+
+Target Variable:
+label
+
+    0 = Normal Traffic
+    1 = Attack Traffic
+
+Column Descriptions:
+
+srcip               Source IP address
+sport               Source port number
+dstip               Destination IP address
+dsport              Destination port number
+proto               Network protocol (TCP, UDP, etc.)
+state               Connection state
+dur                 Connection duration
+sbytes              Bytes sent from source to destination
+dbytes              Bytes sent from destination to source
+sttl                Source Time-To-Live value
+dttl                Destination Time-To-Live value
+sloss               Source packet loss count
+dloss               Destination packet loss count
+service             Network service (HTTP, DNS, FTP, etc.)
+Sload               Source bits per second
+Dload               Destination bits per second
+Spkts               Source packet count
+Dpkts               Destination packet count
+swin                Source TCP window size
+dwin                Destination TCP window size
+stcpb               Source TCP sequence number
+dtcpb               Destination TCP sequence number
+smeansz             Average source packet size
+dmeansz             Average destination packet size
+trans_depth         HTTP transaction depth
+res_bdy_len         HTTP response body length
+Sjit                Source packet jitter
+Djit                Destination packet jitter
+Stime               Connection start time
+Ltime               Connection end time
+Sintpkt             Average source packet interval
+Dintpkt             Average destination packet interval
+tcprtt              TCP round-trip time
+synack              SYN-ACK response time
+ackdat              ACK response time
+is_sm_ips_ports     Source and destination IP/port match flag
+ct_state_ttl        Connections with same state and TTL
+ct_flw_http_mthd    HTTP method count
+is_ftp_login        FTP login success indicator
+ct_ftp_cmd          FTP command count
+ct_srv_src          Connections to same service from source
+ct_srv_dst          Connections to same service to destination
+ct_dst_ltm          Connections to destination in recent window
+ct_src_ltm          Connections from source in recent window
+ct_src_dport_ltm    Connections from source to destination port
+ct_dst_sport_ltm    Connections to destination from source port
+ct_dst_src_ltm      Connections between source and destination
+attack_cat          Attack category (if applicable)
+label               Target classification label
